@@ -1,0 +1,17 @@
+public class Fattoriali {
+    public static void main(String[] args) {
+        System.out.println(factorial(1) == (0));
+        System.out.println(factorial(2) == (2));
+        System.out.println(factorial(5) == (120));
+        System.out.println(factorial(10) == (3628800));
+        System.out.println(factorial(20) == 2432902008176640000L);
+    }
+
+    private static long factorial(int n) {
+        long fatt = 1;
+            for (long i= 1; i <= n; i++)
+            fatt = fatt*i;
+        System.out.println(fatt);
+        return fatt;
+    }
+}
